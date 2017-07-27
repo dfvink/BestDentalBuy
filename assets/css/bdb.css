@@ -1,0 +1,252 @@
+/* global */
+
+body {
+	font-family: 'Avenir Book';
+    color: #9B9B9B;
+}
+
+p {
+    font-size: 20px;
+    color: #4A4A4A;
+    letter-spacing: 0;
+    line-height: 31px;
+}
+
+.row {max-width: 1241px}
+
+h1 {
+    font-family: 'Avenir Bold';
+    color: #62C3D2;
+}
+
+h5 {
+
+}
+
+.button {
+    background: #5D6FB3;
+    box-shadow: 0 4px 4px 0 rgba(155,155,155,0.52);
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Avenir Bold';
+    letter-spacing: 2.08px;
+}
+
+a.button {
+   
+}
+
+/* fonts */
+
+@font-face {
+    font-family:'Avenir Bold';
+    src: url('../fonts/Avenir Next Bold.eot');
+    src: url('../fonts/Avenir Next Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir Next Bold.woff2') format('woff2'),
+        url('../fonts/Avenir Next Bold.woff') format('woff'),
+        url('../fonts/Avenir Next Bold.svg#Avenir Next Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+
+@font-face {
+    font-family:'Avenir Book';
+    src: url('../fonts/Avenir Book.eot');
+    src: url('../fonts/Avenir Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir Book.woff2') format('woff2'),
+        url('../fonts/Avenir Book.woff') format('woff'),
+        url('../fonts/Avenir Book.svg#Avenir Book') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-02DC;
+}
+
+@font-face {
+    font-family:'Avenir Next Condensed';
+    src: url('../fonts/Avenir Next Condensed Bold.eot');
+    src: url('../fonts/Avenir Next Condensed Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir Next Condensed Bold.woff2') format('woff2'),
+        url('../fonts/Avenir Next Condensed Bold.woff') format('woff'),
+        url('../fonts/Avenir Next Condensed Bold.svg#Avenir Next Condensed Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: condensed;
+    unicode-range: U+0020-00FE;
+}
+
+/* menu */
+
+.top-bar {
+	 display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100px;
+}
+
+.top-bar, .top-bar ul {
+    background-color: white;
+}
+
+.top-bar a, .leden_inlog a {
+	color: #4A4A4A;
+	letter-spacing: 0.2px;
+	font-weight: 600;
+    text-transform: uppercase;
+}
+
+.leden_inlog a {
+    color: #62C3D2;
+}
+
+ul.bdb_logo {
+    position: absolute;
+    top: 0px;
+    margin-left: 2.25;
+    list-style-type: none;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+ul.leden_inlog, ul.hamburger {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    list-style-type: none;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 2.25rem;
+}
+
+.menu-icon:after {
+    background: #9B9B9B;
+    box-shadow: 0 7px 0 #9B9B9B, 0 14px 0 #9B9B9B;
+}
+
+
+/* home */
+
+.home_hero {
+    background-color: #F4F4F4;
+}
+
+.home_hero_content {
+      display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#numbers .row {
+    border-bottom: 1px solid #9B9B9B
+}
+
+.number_container {
+    padding: 2rem;
+}
+
+.number_container img {
+    margin-right: 1rem;
+}
+
+#waarom .waarom_intro_container {
+    position: relative;
+}
+
+#ervaringen {
+    background-color: #DDEDEF;
+}
+
+
+/* media queries */
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    .bdb_logo {
+        max-width: 60%;
+    }
+
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .home_hero .row {
+        background-image: url(../images/home_hero.png);
+        background-position: top right;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .home_hero_content {
+        height: 60vw;
+        max-height: 900px
+    }
+
+    .number_container h1 {
+        font-size: 3.5rem;
+        display: flex;
+    }
+
+    .border_right {
+        border-right: solid 1px #9B9B9B;
+    }
+
+    #waarom .button {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 0;
+    }
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+    .top-bar, ul.bdb_logo, ul.hamburger, ul.leden_inlog {
+        height: 160px;
+    }
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
